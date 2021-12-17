@@ -1,15 +1,14 @@
-!/usr/bin/env python3
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-subject = "PROVA: Amic Invisible Nadal 2020",
+subject = "Amistat Invisible Nadal 2021"
 content="""\
-AIXO ES UNA PROVA!!
-
 
 Hola, {gifter.name}!
 
 Gràcies per participar-hi :)
 
-Ets l'amic/ga invisible de... **{gifted.name} {gifted.surname}**.
+Ets l'amistat invisible de... **{gifted.name} {gifted.surname}**.
 
 La seva adreça és:
 
@@ -17,7 +16,7 @@ La seva adreça és:
 
 Recorda enviar la postal abans del **24 de desembre**!
 
-Una abraçada i feliços dies!
+Una abraçada i bones festes!
 """
 
 import sys
@@ -55,6 +54,6 @@ for gifter, gifted in zip(friends, friends[1:]+friends[:1]):
             gifter=gifter,
             gifted=gifted,
         ),
-        config = 'configdb.py',
+        config = './configdb.py',
     )
 
